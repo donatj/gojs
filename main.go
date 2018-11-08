@@ -47,7 +47,7 @@ func main() {
 		v, _ := vm.Run(input.Get("value").String())
 		s, _ := v.ToString()
 
-		preview.Set("innerHTML", s)
+		preview.Set("textContent", s)
 	}))
 
 	<-quit
